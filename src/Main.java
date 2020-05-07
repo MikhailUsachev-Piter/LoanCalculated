@@ -3,8 +3,8 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
         int amount = 1000000;
         int month = 12;
-        int percent = 999;
-        float mp = service.calculate(amount, month, percent);
+        double percent = 9.99;
+        int mp = (int) service.calculate(amount, month, percent);
         System.out.println("Ваш емесячный платеж: " + mp);
     }
 }
